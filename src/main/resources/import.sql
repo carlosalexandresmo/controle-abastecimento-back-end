@@ -1,0 +1,9 @@
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (30.0, 'NEP-4382', '2025-01-03', 60);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (60.0, 'LGC-4346', '2025-01-02', 120);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (45.0, 'NEP-4382', '2025-01-07', 90);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES 15.0, 'MVE-5776', '2025-01-08', 30);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (80.0, 'LGC-4346', '2025-01-08', 160);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (23.0, 'BDO-1801', '2025-01-05', 46);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (68.0, 'BDO-1801', '2025-01-10', 136);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (93.0, 'IAL-9489', '2025-01-07', 186);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (120.0, 'HPX-7773', '2025-01-06', 240);

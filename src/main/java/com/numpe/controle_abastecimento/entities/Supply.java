@@ -1,5 +1,6 @@
 package com.numpe.controle_abastecimento.entities;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,6 +22,7 @@ public class Supply {
 	private String plate;
 	
 	//Date e Hora
+	@Column(name = "created_at")
 	private String createdAt;
 	
 	//Valor total
