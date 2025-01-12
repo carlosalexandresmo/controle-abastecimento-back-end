@@ -35,32 +35,6 @@ public class SupplyController {
     
     @PostMapping
     public Supply insert(@RequestBody Supply supply) {
-
-        //adicionar validação do requestBody
-        // if (supply.getPlate() == null || supply.getPlate().isEmpty()) {
-        //     throw new IllegalArgumentException("Placa não pode ser vazia");
-        // }
-
-        // if (supply.getFuel() == null || supply.getFuel().isEmpty()) {
-        //     throw new IllegalArgumentException("Combustível não pode ser vazio");
-        // }
-
-        // if (supply.getLiters() == null || supply.getLiters() <= 0) {
-        //     throw new IllegalArgumentException("Litros deve ser maior que zero");
-        // }
-
-        // if (supply.getValue() == null || supply.getValue() <= 0) {
-        //     throw new IllegalArgumentException("Valor deve ser maior que zero");
-        // }
-
-        // if (supply.getDate() == null) {
-        //     throw new IllegalArgumentException("Data não pode ser vazia");
-        // }
-
-        // if (supply.getGasStation() == null || supply.getGasStation().isEmpty()) {
-        //     throw new IllegalArgumentException("Posto não pode ser vazio");
-        // }
-
     	Supply result = supplyService.insert(supply);
     	return result;
     }
