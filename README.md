@@ -2,7 +2,7 @@
   Controle de Abastecimento
 </h1>
 
-Demo apresentada [nesse vídeo](https://www.youtube.com/watch?v=hit0XHGt4WI) para ilustrar como implementar a arquitetura limpa utilizando Spring Boot.
+Sistema de controle de abastecimentos de veículos.
 
 ## Tecnologias
  
@@ -11,31 +11,20 @@ Demo apresentada [nesse vídeo](https://www.youtube.com/watch?v=hit0XHGt4WI) par
 - [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)
 - [H2](https://www.h2database.com)
 
-## Como Executar
+## ▶️ Como Executar o Projeto
 
 - Clonar repositório git:
 ```
-git clone 
+git clone https://github.com/carlosalexandresmo/controle-abastecimento-back-end
 ```
-
-## ▶️ Como Executar o Projeto
-
-### Pré-requisitos
-- 🛠️ 
-- 🔑 
 
 ### Passos
 1. Clone o repositório:
    ```bash
-   git clone 
-2. Instale as dependências:
+   git clone https://github.com/carlosalexandresmo/controle-abastecimento-back-end
+2. Acessar o banco H2:
    ```bash
-   flutter pub get
-   ```
-3. Execute o aplicativo:
-   ```bash
-   flutter run
-   ```
+   http://localhost:8080/h2-console
 
 ---
 
@@ -43,13 +32,12 @@ git clone
 
 ```
 lib/
-├── core/                  # Constantes, temas, configurações.
-├── data/                  # Implementações de repositórios, models e serviços.
-├── domain/                # Entidades e casos de uso.
-├── presentation/          # Blocs, telas e widgets.
-└── main.dart              # Ponto de entrada da aplicação.
+├── config/            # Configurações referente ao projeto
+├── controller/        # Controller principal
+├── dto/               # Classe para Objeto de Transporte de Dados.
+├── entities/          # Entidades
+├── repositories/      # Repositório
+└── services/          # Serviços
 ```
 
 ---
-
-## Versões do Projeto

@@ -1,6 +1,7 @@
 package com.numpe.controle_abastecimento.dto;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 
 import org.springframework.beans.BeanUtils;
 
@@ -11,7 +12,7 @@ public class SupplyDTO {
 	private Long id;
 	private int mileage;
 	private String plate;
-	private Timestamp createdAt;
+	private LocalDateTime createdAt;
 	private double total;
 	
 	public SupplyDTO(Supply supply) {
@@ -42,11 +43,11 @@ public class SupplyDTO {
 		this.plate = plate;
 	}
 
-	public Timestamp getCreatedAt() {
+	public LocalDateTime getCreatedAt() {
 		return createdAt;
 	}
 
-	public void setCreatedAt(Timestamp createdAt) {
+	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
 	}
 

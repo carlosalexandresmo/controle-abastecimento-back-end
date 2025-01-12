@@ -1,7 +1,10 @@
 package com.numpe.controle_abastecimento.entities;
 
 import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -26,7 +29,8 @@ public class Supply {
 	
 	//Date e Hora
 	@Column(name = "created_at")
-	private Timestamp createdAt;
+	@JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
+	private LocalDateTime createdAt;
 	
 	//Valor total
 	private double total;
@@ -57,11 +61,11 @@ public class Supply {
 		this.plate = plate;
 	}
 
-	public Timestamp getCreatedAt() {
+	public LocalDateTime getCreatedAt() {
 		return createdAt;
 	}
 
-	public void setCreatedAt(Timestamp createdAt) {
+	public void setCreatedAt(LocalDateTime createdAt) {
 		this.createdAt = createdAt;
 	}
 
