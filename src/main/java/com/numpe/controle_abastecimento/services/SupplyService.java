@@ -3,6 +3,8 @@ package com.numpe.controle_abastecimento.services;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -17,14 +19,22 @@ public class SupplyService {
     private SupplyRepository supplyRepository;
 
     @Transactional(readOnly = true)
-    public List<SupplyDTO> findAll() {
-        List<Supply> result = supplyRepository.findAll();
-        return result.stream().map(SupplyDTO::new).toList();
+    public Page<SupplyDTO> findAll(Integer page, Integer size) {
+        PageRequest pageRequest = PageRequest.of(page, size);
+        Page<Supply> result = supplyRepository.findAll(pageRequest);
+        return result.map(x -> new SupplyDTO(x));
     }
     
     @Transactional
     public Supply insert(Supply supply) {
     	return supplyRepository.save(supply);
+    }
+
+    @Transactional
+    public Page<SupplyDTO> findByPlate(Integer page, Integer size, String plate) {
+        PageRequest pageRequest = PageRequest.of(page, size);
+        Page<Supply> result = supplyRepository.findByPlate(pageRequest, plate);
+        return result.map(x -> new SupplyDTO(x));
     }
     
     public void delete(Long id) {
