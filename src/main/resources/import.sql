@@ -1,9 +1,9 @@
-INSERT INTO supply(mileage, plate, created_at, total) VALUES (30.0, 'NEP-4382', '2025-01-03', 60);
-INSERT INTO supply(mileage, plate, created_at, total) VALUES (60.0, 'LGC-4346', '2025-01-02', 120);
-INSERT INTO supply(mileage, plate, created_at, total) VALUES (45.0, 'NEP-4382', '2025-01-07', 90);
-INSERT INTO supply(mileage, plate, created_at, total) VALUES (15.0, 'MVE-5776', '2025-01-08', 30);
-INSERT INTO supply(mileage, plate, created_at, total) VALUES (80.0, 'LGC-4346', '2025-01-08', 160);
-INSERT INTO supply(mileage, plate, created_at, total) VALUES (23.0, 'BDO-1801', '2025-01-05', 46);
-INSERT INTO supply(mileage, plate, created_at, total) VALUES (68.0, 'BDO-1801', '2025-01-10', 136);
-INSERT INTO supply(mileage, plate, created_at, total) VALUES (93.0, 'IAL-9489', '2025-01-07', 186);
-INSERT INTO supply(mileage, plate, created_at, total) VALUES (120.0, 'HPX-7773', '2025-01-06', 240);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (30, 'NEP-4382', '2025-01-03 12:45', 60.0);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (60, 'LGC-4346', '2025-01-02 13:04', 125.5);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (45, 'NEP-4382', '2025-01-07 03:45', 99.0);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (15, 'MVE-5776', '2025-01-08 01:10', 30.1);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (80, 'LGC-4346', '2025-01-08 12:30', 160.4);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (23, 'BDO-1801', '2025-01-05 04:50', 46.4);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (68, 'BDO-1801', '2025-01-10 22:15', 136.0);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (93, 'IAL-9489', '2025-01-07 23:45', 186.5);
+INSERT INTO supply(mileage, plate, created_at, total) VALUES (120, 'HPX-7773', '2025-01-06 02:40', 240.1);

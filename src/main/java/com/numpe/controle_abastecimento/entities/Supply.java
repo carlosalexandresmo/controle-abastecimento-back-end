@@ -1,5 +1,6 @@
 package com.numpe.controle_abastecimento.entities;
 
+import java.sql.Timestamp;
 import java.util.Objects;
 
 import jakarta.persistence.Column;
@@ -18,17 +19,19 @@ public class Supply {
 	private Long id;
 	
 	//Quilometragem
-	private Double mileage;
+	private int mileage;
 	
 	//Placa
 	private String plate;
 	
 	//Date e Hora
 	@Column(name = "created_at")
-	private String createdAt;
+	private Timestamp createdAt;
 	
 	//Valor total
-	private Integer total;
+	private double total;
+
+	
 
 	public Long getId() {
 		return id;
@@ -38,11 +41,11 @@ public class Supply {
 		this.id = id;
 	}
 
-	public Double getMileage() {
+	public int getMileage() {
 		return mileage;
 	}
 
-	public void setMileage(Double mileage) {
+	public void setMileage(int mileage) {
 		this.mileage = mileage;
 	}
 
@@ -54,19 +57,19 @@ public class Supply {
 		this.plate = plate;
 	}
 
-	public String getCreatedAt() {
+	public Timestamp getCreatedAt() {
 		return createdAt;
 	}
 
-	public void setCreatedAt(String createdAt) {
+	public void setCreatedAt(Timestamp createdAt) {
 		this.createdAt = createdAt;
 	}
 
-	public Integer getTotal() {
+	public double getTotal() {
 		return total;
 	}
 
-	public void setTotal(Integer total) {
+	public void setTotal(double total) {
 		this.total = total;
 	}
 
