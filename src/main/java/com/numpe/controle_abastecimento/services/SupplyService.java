@@ -33,7 +33,7 @@ public class SupplyService {
     @Transactional
     public Page<SupplyDTO> findByPlate(Integer page, Integer size, String plate) {
         PageRequest pageRequest = PageRequest.of(page, size);
-        Page<Supply> result = supplyRepository.findByPlate(pageRequest, plate);
+        Page<Supply> result = supplyRepository.findByPlate(pageRequest, plate.toUpperCase());
         return result.map(x -> new SupplyDTO(x));
     }
     
