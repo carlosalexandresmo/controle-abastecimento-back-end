@@ -1,6 +1,5 @@
 package com.numpe.controle_abastecimento.dto;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
 import org.springframework.beans.BeanUtils;

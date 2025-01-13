@@ -1,6 +1,5 @@
 package com.numpe.controle_abastecimento.entities;
 
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 import java.util.Objects;
 
@@ -29,13 +28,12 @@ public class Supply {
 	
 	//Date e Hora
 	@Column(name = "created_at")
-	@JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private LocalDateTime createdAt;
 	
 	//Valor total
 	private double total;
 
-	
 
 	public Long getId() {
 		return id;
